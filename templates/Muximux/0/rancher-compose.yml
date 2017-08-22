@@ -1,0 +1,13 @@
+.catalog:
+  name: Muximux
+  version: '2'
+  description: This is a lightweight portal to view & manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to keep multiple tabs open, or bookmark the URL to all of your apps. Muximux.
+  services:
+  muximux:
+  scale: 1
+  start_on_create: true
+  uuid: # Unique identifier to be used for upgrades. Please see note.
+  minimum_rancher_version: # The minimum version of Rancher that supports the template
+  questions: #Used to request user input for configuration options
+
+

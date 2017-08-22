@@ -1,0 +1,24 @@
+version: '2'
+services:
+  muximux:
+    image: linuxserver/muximux:latest
+    hostname: muximux
+    environment:
+      PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      PS1: $$(whoami)@$$(hostname):$$(pwd)$$
+      TERM: xterm
+    stdin_open: true
+    working_dir: /root/muximux
+    entrypoint:
+    - /init
+    network_mode: host
+    volumes:
+    - /config
+    domainname: vozro.cf
+    tty: true
+    ports:
+    - 80:80/tcp
+    - 443:443/tcp
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.container.dns: 'true'
