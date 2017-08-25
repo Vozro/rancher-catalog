@@ -1,4 +1,4 @@
-version: '2'
+version: '1'
 services:
   muximux:
     image: linuxserver/muximux:latest
@@ -17,8 +17,8 @@ services:
     domainname: vozro.cf
     tty: true
     ports:
-    - 80:80/tcp
-    - 443:443/tcp
+    - 180:80/tcp
+    - 1443:443/tcp
     labels:
       io.rancher.container.pull_image: always
       io.rancher.container.dns: 'true'
