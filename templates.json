@@ -1,5 +1,18 @@
 [
   {
+    "title": "Organizr ",
+    "description": "Organizr container",
+    "categories": ["docker"],
+    "platform": "linux",
+    "logo": "https://cloudinovasi.id/assets/img/logos/organizr.png",
+    "image": "organizr:latest",
+    "ports": [
+      "80/tcp",
+      "443/tcp"
+    ],
+    "volumes": ["/root", "/config"]
+  },
+  {
     "title": "Registry",
     "description": "Docker image registry",
     "categories": ["docker"],
